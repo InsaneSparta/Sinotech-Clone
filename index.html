@@ -66,38 +66,38 @@
     .caro_button_text{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    
-    .paras{
-        display: flex;
-        flex-direction: column;
-    }
 
     .line{
-        background-color: #2086f3;
         height: 5px;
-        width: 45px;
-        margin: 6px auto;
+        width: 50px;
+        background-color: #2086f3;
+        margin: 0 auto;
     }
 
-    .body_head{
-        font-size: 3vw;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-weight: 700;
+    .bod-heading{
         text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+
+    .bod-cont{
+        background-color: aqua;
+        margin: 50px;
+        padding: 30px;
+
+    }
+
+    table, th{
+        border: 1px solid black;
+        
+    }
+
+    table{
+        table-layout: fixed; 
+        width: 100%; 
         margin-top: 80px;
-        letter-spacing: 8px;
-        
     }
-
-    .body_text{
-        margin-top: 50px;
-        
-    }
-
-    .body_img{
-        
-    }
-
 </style>
 
 <body>
@@ -152,16 +152,20 @@
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"></a>
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> </a>
     </div>
+
+    <table>
+        <tr>
+           <th colspan="2" class="bod-heading">About Us</th> 
+        </tr>
+        <tr><th colspan="2"><div class="line"></div></th></tr>
+        <tr>
+            <th><p class="bod-cont">Sinotech Marine is an independent global marine & engineer consultancy headquartered in Asia’s financial hub Hong Kong. Sinotech Marine provides premium inspections & monitoring services for all maritime assets at the most affordable prices with the best analysis while supporting clients worldwide 24X7. Sinotech Marine differentiates itself by delivering unparallel technical expertise & innovative solutions for the maritime industry with their 300+ Maritime Experts who have proven backgrounds of Chief Engineers, Master Mariners, and Naval Architects,
+
+                As ISO 9001:2015 certified, we believe in continuous optimization in our system and processes through regular feedback from our clients and industry partners.</p></th>
+            <th><div class="bod-cont"><img src="https://www.sinotechmarine.com/wp-content/uploads/2021/09/About_Us_Ship.png" alt="Ship"></div></th>
+        </tr>
+    </table>
+
     
-    <div class="paras">
-        <span class="body_head">About Us</span>
-        <div class="line"></div>
-        <p class="body_text">Sinotech Marine is an independent global marine & engineer consultancy headquartered in Asia’s financial hub Hong Kong. Sinotech Marine provides premium inspections & monitoring services for all maritime assets at the most affordable prices with the best analysis while supporting clients worldwide 24X7. Sinotech Marine differentiates itself by delivering unparallel technical expertise & innovative solutions for the maritime industry with their 300+ Maritime Experts who have proven backgrounds of Chief Engineers, Master Mariners, and Naval Architects,
-
-            As ISO 9001:2015 certified, we believe in continuous optimization in our system and processes through regular feedback from our clients and industry partners.</p>
-            <img class="body_img" src="https://www.sinotechmarine.com/wp-content/uploads/2021/09/About_Us_Ship.png" alt="Ship">
-    </div>
-
-
 </body>
 </html>
